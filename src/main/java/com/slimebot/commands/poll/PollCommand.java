@@ -121,7 +121,7 @@ public class PollCommand {
 
 	private String createProgressbar(double value) {
 		StringBuilder base = new StringBuilder("░".repeat(40));
-		if(value > 1.0 / 40) base.insert((int) (value * 40), "||").insert(0, "||");
+		if (value > 1.0 / 40) base.insert((int) (value * 40), "||").insert(0, "||");
 		return base.toString();
 	}
 }

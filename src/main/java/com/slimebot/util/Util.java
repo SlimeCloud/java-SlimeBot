@@ -54,12 +54,12 @@ public class Util {
 	}
 
 	public static String padRight(String s, char padChar, int n) {
-		if(s.length() > n) return s;
+		if (s.length() > n) return s;
 		return s + String.valueOf(padChar).repeat(n - s.length());
 	}
 
 	public static String padLeft(String s, char padChar, int n) {
-		if(s.length() > n) return s;
+		if (s.length() > n) return s;
 		return String.valueOf(padChar).repeat(n - s.length()) + s;
 	}
 

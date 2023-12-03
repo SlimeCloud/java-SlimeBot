@@ -36,7 +36,7 @@ public class AutoDeleteListener extends ListenerAdapter {
 		buildThreadDelete(thread)
 				.onErrorFlatMap(e -> Main.emptyAction(null).delay(5, TimeUnit.SECONDS).flatMap(x -> buildThreadDelete(thread)))
 				.queueAfter(1, TimeUnit.SECONDS, del -> {
-					if(del) deleteFeedback(thread.getOwner().getUser(), thread.getParentChannel()).queue();
+					if (del) deleteFeedback(thread.getOwner().getUser(), thread.getParentChannel()).queue();
 				});
 	}
 

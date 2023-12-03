@@ -157,6 +157,8 @@ public class Main {
 							config.registerCommand(QuoteCommand.class);
 							config.registerCommand(QuoteMessageCommand.class);
 
+							config.registerCommand(WordchainCommand.class);
+
 							if (dbAvailable) {
 								if (Main.config.level != null) {
 									config.registerCommand(RankCommand.class);

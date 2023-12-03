@@ -40,7 +40,7 @@ public class Poll extends DataClass {
 
 	@Override
 	protected void finishedLoading() {
-		this.values = Main.gson.fromJson(json, new TypeToken<List<Long>[]>(){
+		this.values = Main.gson.fromJson(json, new TypeToken<List<Long>[]>() {
 		}.getType());
 	}
 
